@@ -11,7 +11,7 @@ export const create = async (req, res) => {
             title: req.body.title,
             section: req.body.section,
             fileArr: req.body.fileArr,
-            imgArr: req.body.imgArr.map((item) => "http://localhost:4444/uploads/"+item)
+            imgArr: req.body.imgArr.map((item) => "https://stigmataback.onrender.com/uploads/"+item)
         });
 
         const post = await doc.save();
