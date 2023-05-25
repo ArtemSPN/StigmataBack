@@ -9,7 +9,7 @@ export const create = async (req, res) => {
             text: req.body.text,
             postId: req.body.postId,
             authorUrl: req.body.authorUrl,
-            img: "http://localhost:4444/uploads/"+ req.body.img,
+            img: "https://stigmataback.onrender.com/uploads/"+ req.body.img,
             fileArr: req.body.fileArr
         });
 
