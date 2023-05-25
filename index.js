@@ -38,7 +38,7 @@ const storage = multer.diskStorage({
 
 const upload = multer({storage});
 
-app.listen('https://stigmataback.onrender.com', (err) => {
+app.listen(process.env.PORT, (err) => {
     if(err) {
         return console.log(err);
     }
