@@ -7,7 +7,7 @@ export const create = async (req, res) => {
         const doc = new UserModel({
             username: req.body.username,
             password: req.body.password,
-            link: "http://localhost:4444/uploads/"+req.body.link,
+            link: "https://stigmataback.onrender.com/uploads/"+req.body.link,
             role: req.body.role,
         });
 
