@@ -30,7 +30,7 @@ export const getAll = async (req, res) => {
         
         if (posts){
             res.json({
-                posts:posts.slice(-10)
+                posts:posts.slice(-10).reverse()
             }) 
         } 
         else{
